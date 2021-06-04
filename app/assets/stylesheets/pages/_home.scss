@@ -1,1 +1,48 @@
 // Specific CSS for your home-page
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: url("ph-gradient-copy.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#profile-pic {
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.coming-soon {
+  background-image: url("ph-gradient-copy.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#fish-card {
+  background-image: url("google-fish.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#useless-box-card {
+  background-image: url("useless-box.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#feeder-card {
+  background-image: url("cat-feeder.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
