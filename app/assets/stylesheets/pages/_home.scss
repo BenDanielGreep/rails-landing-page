@@ -1,4 +1,4 @@
-// Specific CSS for your home-page
+    // Specific CSS for your home-page
 
 .half-line {
   width: 50vw;
@@ -8,6 +8,11 @@
 
 section {
   background-origin: bottom;
+}
+
+.btn-primary {
+  border: 0;
+  background-color: rgb(29, 147, 168);
 }
 
 .masthead {
@@ -44,6 +49,7 @@ section {
 
 .profile-pic img{
   height: 200px;
+  width: 200px;
   border-radius: 50%;
   margin-bottom: 40px;
 }
@@ -103,4 +109,28 @@ section {
 
 #music-section {
   margin-top: 24px;
+}
+
+footer {
+  height: 100px;
+  background-color: rgb(29, 147, 168);
+  display: flex;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+.social-links {
+  margin: 12px 12px;
+  a {
+    padding-right: 12px;
+    text-decoration: none;
+    color: #000000;
+  }
 }
