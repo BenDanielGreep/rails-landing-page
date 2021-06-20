@@ -55,6 +55,10 @@ section {
 }
 
 .col-lg-6 {
+    // this is for the hover scroll effect
+  overflow: hidden;
+  position:relative;
+
   display: flex;
   flex-direction: column-reverse;
   height: 320px;
@@ -81,10 +85,34 @@ section {
   background-size: cover;
 }
 
+.portfolio-item {
+
+}
+
 .caption {
-  width: 100%;
+  max-height: 50px;
+}
+
+.caption span {
+  width: 420px;
   padding: 12px;
-  background-color: rgba(0,0,0,0.5)}
+  background-color: rgba(0,0,0,0.7);
+  padding-bottom: 200px;
+  position: absolute;
+  bottom: -300px;
+  white-space: nowrap;
+  transform: translateY(0);
+  transition: 1s;
+  p {
+    font-size: 17px;
+    white-space: normal;
+}
+}
+
+.caption:hover span {
+  transform: translateY(calc(-200px - -50px));
+}
+
 
 #fish-card {
   background-image: url("google-fish.jpg");
@@ -134,3 +162,5 @@ footer {
     color: #000000;
   }
 }
+
+
