@@ -1,10 +1,10 @@
 <div class="masthead">
-  <div class="container text-center my-auto">
-      <h1 class="mb-1">Ben D.G.</h1>
+  <div class="container text-center my-auto intro-text">
+      <h1 class="mb-4 name">Ben Daniel-Greep</h1>
       <h3 class="mb-5">
         <em>Welcome to my Landing Page</em>
       </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+      <a class="btn btn-dark btn-xl js-scroll-trigger" href="#about">Find Out More</a>
     </div>
 </div>
 <section class="content-section bg-light" id="about">
@@ -13,7 +13,9 @@
         <div class="col-lg-10 mx-auto">
           <%= image_tag 'profile-round.jpg', class:'profile-pic' %>
           <h2>I'm a Full Stack Developer</h2>
-          <p class="lead mb-5">I love building apps, designing websites, and building things with Arduino. Please read on to find out about my projects!</p>
+          <hr class= "half-line">
+          <p class="lead mb-5">I love making apps, designing websites, and building things with Arduino.<br>Please read on to
+           find out about my projects!</p>
           <a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio">My projects</a>
         </div>
       </div>
@@ -24,14 +26,14 @@
     <div class="container text-center">
         <div class="content-section-heading text-center">
           <h3 class="text-secondary">Portfolio</h3>
-          <h2 class="mb-5">Web Projects</h2>
+          <h2 class="mb-3">Web Projects</h2>
           <hr class= "half-line">
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6 coming-soon">
           <a class="portfolio-item" href="#!">
             <div class="caption">
-              <span>
+              <span class="coming-soon">
                 <div class="h2">Coming soon...</div>
                 <p class="mb-0">BorrowMyBathroom</p>
               </span>
@@ -41,8 +43,14 @@
         <div class="col-lg-6" id="pawsome-card">
           <a class="portfolio-item" href="http://www.pawsome.org.uk">
             <div class="caption">
-                <div class="h2"></div>
-                <p class="mb-0">Pawsome</p>
+              <span class="pawsome">
+                <div class="h2">Pawsome</div>
+                <p class="mb-0">Built over two weeks inside a team at Le Wagon, this app
+                  encourages ethical adoption by helping users
+                  find their perfect pets, with animals from mulitple adoption centres. Features include a matching
+                  system and a real-time chatroom.
+                  </p>
+                </span>
             </div>
           </a>
         </div>
@@ -55,9 +63,9 @@
     <div class="container">
       <div id="web-projects-title" class="container">
         <div class="content-section-heading text-center">
-          <h2 class="mb-5">Arduino Projects</h2>
+          <h2 class="mb-3">Arduino Projects</h2>
         </div>
-        <hr class= "half-line">
+        <hr class="half-line">
       </div>
       <div class="row no-gutters">
           <div class="col-lg-6" id="fish-card">
@@ -111,15 +119,15 @@
       </div>
   </section>
   <hr>
-  <section>
-    <div class="content-section" id="music-section">
+  <section class="music-section">
+    <div class="" >
       <div class="row text-center">
         <%= link_to image_tag("3.jpg", border: 0), "https://maslink.co.uk/client-directory?client=DANIB2", class: 'profile-pic', target: "blank" %>
         <div class="music-text">
           <h2 class="music-title">
             I am also a classical musician. Click here to find out more!
           </h2>
-          <%= link_to "Visit MAS", "https://maslink.co.uk/client-directory?client=DANIB2", class: "btn btn-dark btn-xl", target: "blank" %>
+          <%= link_to "Visit MAS", "https://maslink.co.uk/client-directory?client=DANIB2", class: "btn btn-dark btn-xl mas", target: "blank" %>
         </div>
       </div>
     </div>

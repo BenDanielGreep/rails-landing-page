@@ -1,13 +1,21 @@
     // Specific CSS for your home-page
 
+.name {
+  font-weight: bolder;
+}
+
+.intro-text {
+}
+
 .half-line {
   width: 50vw;
   margin: auto;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
-section {
+section.content-section {
   background-origin: bottom;
+  min-height: 100vh;
 }
 
 .btn-primary {
@@ -28,6 +36,8 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
 
 .container {
   padding-top: 12px;
@@ -76,6 +86,7 @@ section {
 
 .no-gutters {
   justify-content: space-around;
+  padding-top:12px;
 }
 
 .coming-soon {
@@ -102,6 +113,8 @@ section {
   white-space: nowrap;
   transform: translateY(0);
   transition: 1s;
+  left: 0;
+  text-align: left;
 
   }
   span.google-fish{
@@ -112,6 +125,10 @@ section {
   }
   span.cat-feeder{
     bottom: -71%;
+  }
+  span.pawsome{
+    background-color: rgba(0,0,0,0.8);
+    bottom: -79%;
   }
   span.coming-soon{
     background-color: rgba(0,0,0,0.7);
@@ -125,16 +142,23 @@ section {
 
 .col-lg-6:hover {
   .caption {
-  span {
-  transform: translateY(calc(-200px - -50px));
+    span {
+    transform: translateY(calc(-200px - -50px));
+    }
+    span.coming-soon {
+      transform: translateY(calc(-100px - -50px));
+    }
+    span.pawsome {
+      transform: translateY(calc(-200px - -30px));
+    }
   }
-  span.coming-soon {
-    transform: translateY(calc(-100px - -50px));
-  }
-}
 }
 
 #pawsome-card {
+  background-image: url("pawsome-index.jpg");
+  // background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
@@ -159,8 +183,12 @@ section {
   background-size: cover;
 }
 
-#music-section {
+section .music-section {
+  height: 500px !important;
   margin-top: 24px;
+  .mas {
+    margin-top: 54px;
+  }
 }
 
 footer {
