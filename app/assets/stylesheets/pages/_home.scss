@@ -1,13 +1,26 @@
-// Specific CSS for your home-page
+    // Specific CSS for your home-page
+
+.name {
+  font-weight: bolder;
+}
+
+.intro-text {
+}
 
 .half-line {
   width: 50vw;
   margin: auto;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
-section {
+section.content-section {
   background-origin: bottom;
+  min-height: 100vh;
+}
+
+.btn-primary {
+  border: 0;
+  background-color: rgb(29, 147, 168);
 }
 
 .masthead {
@@ -23,6 +36,8 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
 
 .container {
   padding-top: 12px;
@@ -44,11 +59,16 @@ section {
 
 .profile-pic img{
   height: 200px;
+  width: 200px;
   border-radius: 50%;
   margin-bottom: 40px;
 }
 
 .col-lg-6 {
+    // this is for the hover scroll effect
+  overflow: hidden;
+  position:relative;
+
   display: flex;
   flex-direction: column-reverse;
   height: 320px;
@@ -66,6 +86,7 @@ section {
 
 .no-gutters {
   justify-content: space-around;
+  padding-top:12px;
 }
 
 .coming-soon {
@@ -75,10 +96,71 @@ section {
   background-size: cover;
 }
 
+.portfolio-item {
+
+}
+
 .caption {
-  width: 100%;
+  max-height: 50px;
+}
+
+.caption span {
+  width: 420px;
   padding: 12px;
-  background-color: rgba(0,0,0,0.5)}
+  background-color: rgba(0,0,0,0.7);
+  padding-bottom: 100px;
+  position: absolute;
+  white-space: nowrap;
+  transform: translateY(0);
+  transition: 1s;
+  left: 0;
+  text-align: left;
+
+  }
+  span.google-fish{
+    bottom: -71%;
+  }
+  span.useless-box{
+    bottom: -71%;
+  }
+  span.cat-feeder{
+    bottom: -71%;
+  }
+  span.pawsome{
+    background-color: rgba(0,0,0,0.8);
+    bottom: -79%;
+  }
+  span.coming-soon{
+    background-color: rgba(0,0,0,0.7);
+    background-image: none;
+    bottom: -40%;
+  }
+  p {
+    font-size: 17px;
+    white-space: normal;
+}
+
+.col-lg-6:hover {
+  .caption {
+    span {
+    transform: translateY(calc(-200px - -50px));
+    }
+    span.coming-soon {
+      transform: translateY(calc(-100px - -50px));
+    }
+    span.pawsome {
+      transform: translateY(calc(-200px - -30px));
+    }
+  }
+}
+
+#pawsome-card {
+  background-image: url("pawsome-index.jpg");
+  // background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 
 #fish-card {
   background-image: url("google-fish.jpg");
@@ -101,6 +183,36 @@ section {
   background-size: cover;
 }
 
-#music-section {
+section .music-section {
+  height: 500px !important;
   margin-top: 24px;
+  .mas {
+    margin-top: 54px;
+  }
 }
+
+footer {
+  height: 100px;
+  background-color: rgb(29, 147, 168);
+  display: flex;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+.social-links {
+  margin: 12px 12px;
+  a {
+    padding-right: 12px;
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+
